@@ -49,7 +49,7 @@
   color: #d49e4a;
   border-bottom: solid 2px #d49e4a; }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .navbar {
     background-color: #173e43; }
 
@@ -120,6 +120,10 @@
       padding-bottom: 25px; }
     #page #assortiment img {
       margin: 10px; }
+    #page #assortiment a:link, #page #assortiment a:hover, #page #assortiment a:active {
+      color: none;
+      text-decoration: none;
+      outline: none; }
   #page #locatie {
     position: relative;
     text-align: center;

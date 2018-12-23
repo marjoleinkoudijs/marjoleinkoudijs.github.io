@@ -101,6 +101,11 @@
 		img {
 			margin: 10px;
 		}
+		a:link, a:hover, a:active,  {
+			color: none;
+			text-decoration: none;
+			outline: none;
+		}
 	}
 
 	// Locatie

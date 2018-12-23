@@ -20,8 +20,8 @@ $(document).ready(function () {
 	    	scrollTop: $(this.hash).offset().top - 56
 	    }, 750 );
 
-	    // close menu pending on width < 768px
-	    if (window.matchMedia("(max-width: 768px)").matches) {
+	    // close menu pending on width < 960px
+	    if (window.matchMedia("(max-width: 960px)").matches) {
 			$('.navbar-toggler').click();
 		}
 	});
