@@ -84,10 +84,15 @@
     #page #info #pictures {
       padding-bottom: 25px; }
       #page #info #pictures img {
-        padding: 10px; }
-      #page #info #pictures H4 {
+        padding: 10px;
+        width: 100px; }
+      #page #info #pictures h4 {
         color: #d49e4a;
         font-size: 15px; }
+    @media (max-width: 768px) {
+      #page #info #pictures img {
+        padding: 5px;
+        width: 75px; } }
   #page #diensten {
     background-image: url("../images/background/image_hammer.jpg");
     background-attachment: fixed;
