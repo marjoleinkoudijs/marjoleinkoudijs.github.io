@@ -1,0 +1,187 @@
+@import 'styles';
+@import 'navigation';
+
+// Styles applied to index.html
+
+#page {
+	display: none;
+	color: white;
+
+	h1 {
+		@extend .style_h1;
+	}
+	h3 {
+		@extend .style_h3;
+	}
+
+	// Header
+	#header {
+		height: 100vh;
+		background-image: url('../images/background/image_tools.jpg');
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.col {
+			top: 200px;
+			width: 100%;
+			background-color: $color-blue-light;
+		}
+		h2 {
+			font-size: 20px;
+			color: white;
+			margin-bottom: 25px;
+		}
+	}
+
+	//Over ons
+	#info {
+		background-color: $color-blue;
+		p {
+			color: $color-gold;
+			font-size: 15px;
+			margin: 0px 25px 25px 25px;
+		}
+		#pictures {
+			padding-bottom: 25px;
+			img {
+				padding: 10px;
+			}
+			H4 {
+				color: $color-gold;
+				font-size: 15px;
+			}
+		}
+
+	}
+
+	// Diensten
+	#diensten {
+		background-image: url('../images/background/image_hammer.jpg');
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		#content {
+			padding-top: 60px;
+			padding-bottom: 100px;
+		}
+		.block {
+			color: $color-blue;
+			margin: 0px 25px 25px 25px;
+			background-color: $color-gold-light;
+			box-shadow: 0 0 12px black;
+		}
+
+		@media (max-width: 960px) {
+			#content {
+				padding-top: 25px;
+				padding-bottom: 25px;;
+			}
+			.block {
+				width:75%;
+			}
+		}
+	}
+
+	// Assortiment
+	#assortiment {
+		position: relative;
+		background-color: $color-blue;
+		#brands {
+			padding-bottom: 25px;
+		}
+		img {
+			margin: 10px;
+		}
+	}
+
+	// Locatie
+	#locatie {
+		position: relative;
+		text-align: center;
+		height: 400px;
+		width: 100%;
+		iframe {
+			position: absolute;
+		  	top: 0;
+		  	left: 0;
+			height: 400px;	
+			width: 100%;
+			pointer-events: none;
+		}
+	}
+
+	// Openingstijden
+	#open {
+		height: 600px;
+		background-image: url("../images/background/image_wood.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		#timetable {
+			background-color: $color-gold-light;
+			box-shadow: 0 0 12px black;
+			margin-top: 60px;
+			td, th {
+				border: none;
+				padding: 6px;
+			}
+			th {
+				padding-top: 18px;
+				border-bottom: solid;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	// Footer
+	#footer {
+		position: relative;
+		width: 100%;
+		background-color: $color-teal;
+		box-shadow: 0 0 12px black;
+		.row{
+			height: 150px;
+			padding-top: 30px;
+		}
+		a:link {
+			color: white;
+			outline: none;		
+		}
+		a:hover {
+			color: $color-gold;
+			text-decoration: none;
+		}
+		a:visited {
+			color: white;
+		}
+		img {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		p {
+			padding: 10px;
+		}
+	}
+	.iconHover {
+		display: none;
+	}
+
+	// Credits
+	#credits {
+		position: relative;
+		width: 100%;
+		background-color: $color-teal-light;
+		.row {
+			height: 30px;
+		}
+		h6 {
+			font-size: 10px;
+			color: $color-gold;
+		}
+	}
+}
+	

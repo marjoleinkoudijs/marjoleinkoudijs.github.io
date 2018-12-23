@@ -1,0 +1,44 @@
+// Colors
+$color-blue: rgb(54,69,79);
+$color-blue-light: rgba(54,69,79,0.8);
+$color-teal: rgb(23,62,67);
+$color-teal-light: rgba(23,62,67,0.8);
+$color-gold: rgb(212,158,74);
+$color-gold-light: rgba(212,158,74,0.8);
+$color-credits: rgb(0,153,150);
+
+// Fonts sizes
+$font-size-subtitle: 18px;
+$font-size-main: 14px;
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+#page {
+	font-family: 'Cabin', sans-serif;
+}
+.navbar {
+	font-family: 'Raleway',monospace;
+}
+
+// Stylesets
+.style_h1 {
+	font-family: 'Raleway', monospace;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: white;
+}
+.style_h3 {
+	font-family: 'Raleway', monospace;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

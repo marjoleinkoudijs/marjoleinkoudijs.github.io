@@ -1,0 +1,45 @@
+// Navigation 
+.navbar {
+	border: none;
+	background-color: transparent;
+	transition: background-color 1s ease 0s;
+}
+.navbar.solid {
+	background-color: $color-teal;
+	transition: background-color 1s ease 0s;
+	box-shadow: 0 0 12px black;
+}
+.navbar-nav {
+	a {
+		color: white;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	a:hover {
+		color: $color-gold;
+	}
+	.active {
+		border-bottom: solid 2px white;
+	}
+	.active:hover {
+		color: $color-gold;
+		border-bottom: solid 2px $color-gold;
+	}
+}
+
+// Collapsed navbar
+@media (max-width: 768px) {
+	.navbar {
+		background-color: $color-teal;
+	}
+	.navbar-nav {
+		.active {
+			border-bottom: none;
+		}
+		.active:hover {
+			border-bottom: none;
+		}
+	}
+}
+

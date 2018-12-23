@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Cabin");
+#page {
+  font-family: 'Cabin', sans-serif; }
+
+.navbar {
+  font-family: 'Raleway',monospace; }
+
+.style_h1, #page h1 {
+  font-family: 'Raleway', monospace;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: white; }
+
+.style_h3, #page h3 {
+  font-family: 'Raleway', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.navbar {
+  border: none;
+  background-color: transparent;
+  transition: background-color 1s ease 0s; }
+
+.navbar.solid {
+  background-color: #173e43;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 12px black; }
+
+.navbar-nav a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+.navbar-nav a:hover {
+  color: #d49e4a; }
+.navbar-nav .active {
+  border-bottom: solid 2px white; }
+.navbar-nav .active:hover {
+  color: #d49e4a;
+  border-bottom: solid 2px #d49e4a; }
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #173e43; }
+
+  .navbar-nav .active {
+    border-bottom: none; }
+  .navbar-nav .active:hover {
+    border-bottom: none; } }
+#page {
+  display: none;
+  color: white; }
+  #page #header {
+    height: 100vh;
+    background-image: url("../images/background/image_tools.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #page #header .col {
+      top: 200px;
+      width: 100%;
+      background-color: rgba(54, 69, 79, 0.8); }
+    #page #header h2 {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 25px; }
+  #page #info {
+    background-color: #36454f; }
+    #page #info p {
+      color: #d49e4a;
+      font-size: 15px;
+      margin: 0px 25px 25px 25px; }
+    #page #info #pictures {
+      padding-bottom: 25px; }
+      #page #info #pictures img {
+        padding: 10px; }
+      #page #info #pictures H4 {
+        color: #d49e4a;
+        font-size: 15px; }
+  #page #diensten {
+    background-image: url("../images/background/image_hammer.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #page #diensten #content {
+      padding-top: 60px;
+      padding-bottom: 100px; }
+    #page #diensten .block {
+      color: #36454f;
+      margin: 0px 25px 25px 25px;
+      background-color: rgba(212, 158, 74, 0.8);
+      box-shadow: 0 0 12px black; }
+    @media (max-width: 960px) {
+      #page #diensten #content {
+        padding-top: 25px;
+        padding-bottom: 25px; }
+      #page #diensten .block {
+        width: 75%; } }
+  #page #assortiment {
+    position: relative;
+    background-color: #36454f; }
+    #page #assortiment #brands {
+      padding-bottom: 25px; }
+    #page #assortiment img {
+      margin: 10px; }
+  #page #locatie {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    width: 100%; }
+    #page #locatie iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px;
+      width: 100%;
+      pointer-events: none; }
+  #page #open {
+    height: 600px;
+    background-image: url("../images/background/image_wood.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #page #open #timetable {
+      background-color: rgba(212, 158, 74, 0.8);
+      box-shadow: 0 0 12px black;
+      margin-top: 60px; }
+      #page #open #timetable td, #page #open #timetable th {
+        border: none;
+        padding: 6px; }
+      #page #open #timetable th {
+        padding-top: 18px;
+        border-bottom: solid;
+        font-weight: bold;
+        text-transform: uppercase; }
+  #page #footer {
+    position: relative;
+    width: 100%;
+    background-color: #173e43;
+    box-shadow: 0 0 12px black; }
+    #page #footer .row {
+      height: 150px;
+      padding-top: 30px; }
+    #page #footer a:link {
+      color: white;
+      outline: none; }
+    #page #footer a:hover {
+      color: #d49e4a;
+      text-decoration: none; }
+    #page #footer a:visited {
+      color: white; }
+    #page #footer img {
+      margin-left: 10px;
+      margin-right: 10px; }
+    #page #footer p {
+      padding: 10px; }
+  #page .iconHover {
+    display: none; }
+  #page #credits {
+    position: relative;
+    width: 100%;
+    background-color: rgba(23, 62, 67, 0.8); }
+    #page #credits .row {
+      height: 30px; }
+    #page #credits h6 {
+      font-size: 10px;
+      color: #d49e4a; }
+
+/*# sourceMappingURL=index.css.map */
