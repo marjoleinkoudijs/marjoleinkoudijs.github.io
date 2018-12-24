@@ -18,9 +18,10 @@ $(document).ready(function () {
         e.preventDefault();
         $('body,html').animate({
 	       scrollTop: $(this.hash).offset().top - 56
-	       }, 750 );
+	       }, 1000);
 
 	    // close menu pending on width < 960px
+        alert('mark')
 	    if (window.matchMedia("(max-width: 960px)").matches) {
 		  $('.navbar-toggler').click();
 		}
@@ -57,6 +58,9 @@ $(document).ready(function () {
         $("#minimize").slideUp(1000);
         $('.down').show();
         $('.up').hide();
+        $('body,html').animate({
+           scrollTop: $('#assortiment').offset().top - 56
+           }, 1000);
     });
     
     // Icon color-switch when hovering
