@@ -3,7 +3,8 @@ $color-blue: rgb(54,69,79);
 $color-blue-light: rgba(54,69,79,0.8);
 $color-teal: rgb(23,62,67);
 $color-teal-light: rgba(23,62,67,0.8);
-$color-gold: rgb(212,158,74);
+// #D49E4A
+$color-gold: rgb(212,158,74);				
 $color-gold-light: rgba(212,158,74,0.8);
 $color-credits: rgb(0,153,150);
 
@@ -41,4 +42,14 @@ $font-size-main: 14px;
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.bounce {
+	-webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-10px); }
+	80% { -webkit-transform: translateY(-10px); }
 }

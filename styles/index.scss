@@ -106,6 +106,17 @@
 			text-decoration: none;
 			outline: none;
 		}
+		button {
+			outline: none;
+			margin-top: 10px;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			@extend .bounce;
+		}
+		button:hover {
+			color: $color-gold;
+		}
 	}
 
 	// Locatie
@@ -178,6 +189,7 @@
 			padding: 10px;
 		}
 	}
+
 	.iconHover {
 		display: none;
 	}

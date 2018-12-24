@@ -26,6 +26,16 @@
   margin-top: 20px;
   margin-bottom: 20px; }
 
+.bounce, #page #assortiment button {
+  -webkit-animation: bounce 2s infinite ease-in-out; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-10px); }
+  80% {
+    -webkit-transform: translateY(-10px); } }
 .navbar {
   border: none;
   background-color: transparent;
@@ -124,6 +134,14 @@
       color: none;
       text-decoration: none;
       outline: none; }
+    #page #assortiment button {
+      outline: none;
+      margin-top: 10px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+    #page #assortiment button:hover {
+      color: #d49e4a; }
   #page #locatie {
     position: relative;
     text-align: center;
