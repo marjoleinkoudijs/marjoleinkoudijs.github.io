@@ -49,19 +49,26 @@ $(document).ready(function () {
 
     // Section down
     $(".down").click( function(){
-        $("#minimize").slideDown(1000);
         $('.down').hide();
-        $('.up').show();
+        $("#minimize").slideDown(1000);
+        delayicon('.up');
     });
     // Section up
     $(".up").click( function(){
-        $("#minimize").slideUp(1000);
-        $('.down').show();
         $('.up').hide();
+        $("#minimize").slideUp(1000);
         $('body,html').animate({
            scrollTop: $('#assortiment').offset().top - 56
            }, 1000);
+        delayicon('.down');
     });
+
+    // Supported fuction section up/down
+    function delayicon(icon) {
+    setTimeout(function(){ 
+        $(icon).show();
+        }, 1000);
+    }
     
     // Icon color-switch when hovering
     $('#footer a').hover(function(){
