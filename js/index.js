@@ -39,8 +39,7 @@ $(document).ready(function () {
     }
 
     // Limit number of brands
-    if ((window.matchMedia("(max-width: 768px)").matches) || ww<768) {
-        // alert('smaller');
+    if (window.matchMedia("(max-width: 768px)").matches) {
         $('#minimize').hide();
         $('.up').hide();
     } else {
