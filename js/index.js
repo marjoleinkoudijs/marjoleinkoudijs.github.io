@@ -45,24 +45,15 @@ $(document).ready(function () {
     $(".down").click( function(){
         $('.down').hide();
         $("#minimize").slideDown(1000);
-        delayicon('.up');
+        $('.up').show(1000);
     });
     // Section up
     $(".up").click( function(){
         $('.up').hide();
+        $('.down').show(1000);
         $("#minimize").slideUp(1000);
-        $('body,html').animate({
-           scrollTop: $('#assortiment').offset().top - 72
-           }, 1000);
-        delayicon('.down');
+        $('html, body').animate({scrollTop: $('#assortiment').offset().top - 72}, 1000);
     });
-
-    // Supported fuction section up/down
-    function delayicon(icon) {
-    setTimeout(function(){ 
-        $(icon).show();
-        }, 1000);
-    }
     
     // Icon color-switch when hovering
     $('#footer a').hover(function(){
