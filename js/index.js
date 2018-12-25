@@ -20,31 +20,27 @@ $(document).ready(function () {
 	       scrollTop: $(this.hash).offset().top - 56
 	       }, 1000);
 
-	    // close menu pending on width < 960px
+	    // Close menu pending on width < 960px
         alert('mark')
 	    if (window.matchMedia("(max-width: 960px)").matches) {
 		  $('.navbar-toggler').click();
 		}
 	});
 
-    // Window resize
-    $(window).resize(function(){
-        var id;
-        clearTimeout(id);
-        id = setTimeout(resizeComplete, 600);
-        var ww = $(window).width();
-    });
-    function resizeComplete(){
-        var ww = $(window).width();
+    // // Minimize number of brands pending on screen width < 768px
+    function mywindow(x) {
+        if (x.matches) {
+            $('#minimize').hide();
+            $('.up').hide();
+            $('.down').show();
+        } else {
+            $('#minimize').show();
+            $(':button').hide();
+        }
     }
-
-    // Limit number of brands
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        $('#minimize').hide();
-        $('.up').hide();
-    } else {
-        $(':button').hide();
-    }
+    var x = window.matchMedia("(max-width: 768px)")
+    mywindow(x)
+    x.addListener(mywindow)
 
     // Section down
     $(".down").click( function(){
