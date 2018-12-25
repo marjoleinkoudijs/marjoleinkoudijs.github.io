@@ -5,7 +5,7 @@ $(document).ready(function () {
 
   	// Navbar (transparant to solid when scrolling down/up)
     $(window).scroll(function() {
-      	if($(this).scrollTop() > 60) { 
+      	if($(this).scrollTop() > 70) { 
             $('.navbar').addClass('solid');
       	} else {
           	$('.navbar').removeClass('solid');
@@ -17,11 +17,10 @@ $(document).ready(function () {
         scrollLink.click(function(e) {
         e.preventDefault();
         $('body,html').animate({
-	       scrollTop: $(this.hash).offset().top - 56
+	       scrollTop: $(this.hash).offset().top - 72
 	       }, 1000);
 
 	    // Close menu pending on width < 960px
-        alert('mark')
 	    if (window.matchMedia("(max-width: 960px)").matches) {
 		  $('.navbar-toggler').click();
 		}
@@ -53,7 +52,7 @@ $(document).ready(function () {
         $('.up').hide();
         $("#minimize").slideUp(1000);
         $('body,html').animate({
-           scrollTop: $('#assortiment').offset().top - 56
+           scrollTop: $('#assortiment').offset().top - 72
            }, 1000);
         delayicon('.down');
     });
