@@ -55,6 +55,14 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $('#assortiment').offset().top - 72}, 1000);
     });
     
+    // Footer active when scrolled to bottom
+    $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() > $(document).height() - 180) {
+            $(".navbar-nav").find(".active").removeClass("active");
+            $(".last").addClass("active");
+        }
+    });
+
     // Icon color-switch when hovering
     $('#footer a').hover(function(){
     	$(this).find('img').toggleClass('iconHover')
