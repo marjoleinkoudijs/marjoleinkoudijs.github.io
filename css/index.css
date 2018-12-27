@@ -70,6 +70,44 @@
 #page {
   display: none;
   color: white; }
+  #page #popup {
+    display: none;
+    position: fixed;
+    top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto; }
+    #page #popup .modal-content {
+      background-color: #d49e4a;
+      border: solid 1px #173e43;
+      color: white; }
+    #page #popup .modal-header {
+      border-bottom: solid 1px #173e43; }
+    #page #popup .modal-title {
+      color: #173e43;
+      font-size: 24px;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-bottom: 0px; }
+    #page #popup .modal-close {
+      float: right;
+      padding-top: 3px; }
+    #page #popup .modal-close:hover, #page #popup .modal-close:focus {
+      cursor: pointer; }
+    #page #popup .modal-text {
+      font-family: 'Raleway',monospace;
+      font-size: 18px;
+      margin-bottom: 25px; }
+    #page #popup table {
+      border: solid 2px white; }
+    #page #popup th {
+      font-weight: normal;
+      border-top: none;
+      border-bottom: solid 2px white;
+      text-transform: uppercase; }
+    #page #popup tr {
+      border: none; }
   #page #header {
     height: 100vh;
     background-image: url("../images/background/image_tools.jpg");

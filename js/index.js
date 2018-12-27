@@ -1,7 +1,22 @@
 $(document).ready(function () {
 
-  // Load page
+    // Load page
 	$('#page').fadeIn(1500);
+
+    // OPTIONAL Popup
+    // Open popup
+    setTimeout(function() {
+        $('#popup').modal();
+    }, 2000);
+    // Close popup
+    var modalclose = document.getElementsByClassName("modal-close")[0];
+    modalclose.onclick = function() {
+        $('#popup').modal('hide')
+    }
+    // Icon color-switch when hovering
+    $('#popup span').hover(function(){
+        $(this).find('img').toggleClass('iconHover')
+    });
 
   	// Navbar (transparant to solid when scrolling down/up)
     $(window).scroll(function() {
@@ -68,3 +83,4 @@ $(document).ready(function () {
     	$(this).find('img').toggleClass('iconHover')
     });
 });
+

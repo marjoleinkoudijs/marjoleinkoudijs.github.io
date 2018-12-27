@@ -19,15 +19,14 @@
 	<script type='text/javascript' src='js/index.js'></script>
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131363343-1"></script>
+	<!-- www.vanschootenbouwmaterialen.nl -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131428694-1"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
+	  	window.dataLayer = window.dataLayer || [];
 	  	function gtag(){dataLayer.push(arguments);}
 	  	gtag('js', new Date());
-	  	gtag('config', 'UA-131363343-1');
+	  	gtag('config', 'UA-131428694-1');
 	</script>
-
-
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="80">
 
@@ -53,6 +52,43 @@
 			    </ul>
 		  	</div>
 		</nav>
+
+		<!-- OPTIONAL Popup -->
+		<div id='popup' class="modal col-12 col-md-8 text-center">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<h3 class="modal-title">BELANGRIJK</h3>
+				    <span class='modal-close'>
+						<img class='iconNormal' src='images/icon/icon_close_teal.png' height='30'>
+						<img class='iconHover' src='images/icon/icon_close_white.png' height='30'>
+				    </span>
+	      		</div>
+	      		<div class="modal-body">
+	        		<h4 class='modal-text'>Vanwege de jaarwisseling hebben wij aangepaste openingstijden op de volgende dagen:</h4>
+	 				<div class='row justify-content-center'>
+						<div id='timetable' class='col-12 col-md-8'>	
+							<table class='table'>
+								<tr>
+									<th>Dag</th>
+									<th>Overdag</th>
+									<th>'s Avonds</th>
+								</tr>						
+								<tr>
+									<td>Ma 31 Dec</td>
+									<td>Gesloten</td>
+									<td>Gesloten</td>
+								</tr>
+								<tr>
+									<td>Di 01 Jan</td>
+									<td>Gesloten</td>
+									<td>Gesloten</td>
+								</tr>							
+							</table>
+						</div>
+					</div>
+	      		</div>
+	    	</div>
+		</div>
 
 		<!-- Header -->
 		<div id='header' class='container-fluid'>
